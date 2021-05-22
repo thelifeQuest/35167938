@@ -1,0 +1,57 @@
+html{
+    min-height: 100%;
+    overflow: hidden;
+  }
+  body{
+    height: calc(100vh - 8em);
+    padding: 1em;
+    color: rgba(255,255,255,.75);
+    
+    background-color: rgb(25,25,25);  
+  } 
+  
+  
+    @keyframes typing {
+      from { width: 100% }
+      to { width: 0 }
+      
+  } 
+  
+  .container {
+    position: relative;
+    font-family: "courier", monospace;  
+    top: 50%;  
+    width: 25em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 3vw;
+    text-align: left;
+    transform: translateY(-50%);    
+    
+  }
+  
+  .typing {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: -1;
+  }
+  
+  .hiders {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .hiders p {
+    position: relative; 
+    clear: both; 
+    margin: 0;
+    float: right; 
+    width:0; 
+    background: rgb(25,25,25); 
+    animation: typing 6s steps(900, end);
+    animation-fill-mode: both;  
+  }
+    
